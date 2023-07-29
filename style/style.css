@@ -1,0 +1,142 @@
+:root {
+  --body-bg: #ffffff;
+  --logo-font-family: 'Raleway', sans-serif;
+  --logo-font-size: 18px;
+  --logo-line-height: 1.17;
+  --logo-font-weight: 800;
+  --logo-letter-spacing: 0.03em;
+  --titles-font-family: 'Roboto', sans-serif;
+  --titles-color: #2e2f42;
+  --text-font-family: 'Roboto', sans-serif;
+  --text-color: #434455;
+
+  /* ========== Colors ========== */
+  --color-brand: #4d5ae5;
+  --color-white: #ffffff;
+  --color-gray: #f4f4fd;
+  --color-dark-blue: #2e2f42;
+}
+
+
+/* ========== General ========== */
+body {
+  font-family: var(--text-font-family);
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--text-color);
+  background-color: var(--body-bg);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--titles-font-family);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--titles-color);
+}
+
+h1 {
+  font-size: 56px;
+  line-height: 1.07;
+}
+
+h2 {
+  font-size: 36px;
+  line-height: 1.11;
+}
+
+h3 {
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+.button-primary {
+  font-weight: 500;
+  color: var(--color-white);
+  background-color: var(--color-brand);
+}
+
+.logo {
+  font-size: var(--logo-font-size);
+  line-height: var(--logo-line-height);
+  font-weight: var(--logo-font-weight);
+  letter-spacing: var(--logo-letter-spacing);
+  text-transform: uppercase;
+  color: var(--titles-color);
+}
+
+.logo span {
+  color: var(--color-brand);
+}
+
+
+/* ========== Header ========== */
+.main-nav .link {
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--titles-color);
+}
+
+.contacts {
+  font-style: normal;
+  color: var(--text-color)
+}
+
+.contacts .link {
+  line-height: 1.5;
+  color: var(--text-color);
+}
+
+
+/* ========== Hero Section ========== */
+.hero-section {
+  background-color: var(--color-dark-blue);
+}
+
+.page-title {
+  text-align: center;
+  color: var(--color-white);
+}
+
+
+/* ========== Our Team Section ========== */
+.our-team-section {
+  background-color: var(--color-gray);
+}
+
+.our-team-section .title {
+  text-align: center;
+}
+
+.our-team-section .list-item {
+  background-color: var(--color-white);
+}
+
+.our-team-section .name,
+.our-team-section .position {
+  text-align: center;
+}
+
+
+/* ========== Footer ========== */
+.footer {
+  background-color: var(--color-dark-blue);
+}
+
+.footer .logo,
+.footer .text {
+  color: var(--color-gray);
+}
