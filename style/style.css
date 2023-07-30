@@ -1,10 +1,5 @@
 :root {
   --body-bg: #ffffff;
-  --logo-font-family: 'Raleway', sans-serif;
-  --logo-font-size: 18px;
-  --logo-line-height: 1.17;
-  --logo-font-weight: 800;
-  --logo-letter-spacing: 0.03em;
   --titles-font-family: 'Roboto', sans-serif;
   --titles-color: #2e2f42;
   --text-font-family: 'Roboto', sans-serif;
@@ -12,11 +7,11 @@
 
   /* ========== Colors ========== */
   --color-brand: #4d5ae5;
+  --color-dark: #2e2f42;
   --color-white: #ffffff;
-  --color-gray: #f4f4fd;
-  --color-grayish: #e7e9fc;
-  --color-blue: #404bbf;
-  --color-dark-blue: #2e2f42;
+  --color-light: #f4f4fd;
+  --color-active: #404bbf;
+  --color-accent: #e7e9fc;
 }
 
 
@@ -72,11 +67,18 @@ a {
   background-color: var(--color-brand);
 }
 
+.button-primary:hover,
+.button-primary:active,
+.button-primary:focus {
+  background-color: var(--color-active);
+}
+
 .logo {
-  font-size: var(--logo-font-size);
-  line-height: var(--logo-line-height);
-  font-weight: var(--logo-font-weight);
-  letter-spacing: var(--logo-letter-spacing);
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  line-height: 1.17;
+  font-weight: 800;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--titles-color);
 }
@@ -88,13 +90,19 @@ a {
 
 /* ========== Header ========== */
 .main-header {
-  border-bottom: 1px solid var(--color-grayish);
+  border-bottom: 1px solid var(--color-accent);
 }
 
 .main-nav .link {
   font-weight: 500;
   line-height: 1.5;
   color: var(--titles-color);
+}
+
+.main-nav .link:hover,
+.main-nav .link:active,
+.main-nav .link:focus {
+  color: var(--color-active);
 }
 
 .contacts {
@@ -107,10 +115,27 @@ a {
   color: var(--text-color);
 }
 
+.contacts .link:hover,
+.contacts .link:active,
+.contacts .link:focus {
+  color: var(--color-active);
+}
+
+
+/* ========== Footer ========== */
+.footer {
+  background-color: var(--color-dark);
+}
+
+.footer .logo,
+.footer .text {
+  color: var(--color-light);
+}
+
 
 /* ========== Hero Section ========== */
 .hero-section {
-  background-color: var(--color-dark-blue);
+  background-color: var(--color-dark);
 }
 
 .page-title {
@@ -121,7 +146,7 @@ a {
 
 /* ========== Our Team Section ========== */
 .our-team-section {
-  background-color: var(--color-gray);
+  background-color: var(--color-light);
 }
 
 .our-team-section .title {
@@ -139,35 +164,25 @@ a {
 
 
 /* ========== Portfolio ========== */
-.filter-controls .filter-button {
-  border: 1px solid var(--color-grayish);
+.filter-button {
+  border: 1px solid var(--color-accent);
   color: var(--color-brand);
-  background-color: var(--color-gray);
+  background-color: var(--color-light);
 }
 
-.filter-controls .filter-button:hover,
-.filter-controls .filter-button:focus,
-.filter-controls .filter-button:active {
+.filter-button:hover,
+.filter-button:focus,
+.filter-button:active {
   border: none;
   color: var(--color-white);
-  background-color: var(--color-blue);
+  background-color: var(--color-active);
   box-shadow: 0px 3px 1px 0px #0000001A;
 }
 
 .portfolio-item {
-  border: 1px solid var(--color-grayish);
+  border: 1px solid var(--color-accent);
 }
 
 .portfolio-category {
   color: var(--text-color);
-}
-
-/* ========== Footer ========== */
-.footer {
-  background-color: var(--color-dark-blue);
-}
-
-.footer .logo,
-.footer .text {
-  color: var(--color-gray);
 }
