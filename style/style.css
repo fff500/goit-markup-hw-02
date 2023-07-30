@@ -14,6 +14,8 @@
   --color-brand: #4d5ae5;
   --color-white: #ffffff;
   --color-gray: #f4f4fd;
+  --color-grayish: #e7e9fc;
+  --color-blue: #404bbf;
   --color-dark-blue: #2e2f42;
 }
 
@@ -46,6 +48,7 @@ h2 {
 
 h3 {
   font-size: 20px;
+  font-weight: 500;
   line-height: 1.2;
 }
 
@@ -84,6 +87,10 @@ a {
 
 
 /* ========== Header ========== */
+.main-header {
+  border-bottom: 1px solid var(--color-grayish);
+}
+
 .main-nav .link {
   font-weight: 500;
   line-height: 1.5;
@@ -130,6 +137,30 @@ a {
   text-align: center;
 }
 
+
+/* ========== Portfolio ========== */
+.filter-controls .filter-button {
+  border: 1px solid var(--color-grayish);
+  color: var(--color-brand);
+  background-color: var(--color-gray);
+}
+
+.filter-controls .filter-button:hover,
+.filter-controls .filter-button:focus,
+.filter-controls .filter-button:active {
+  border: none;
+  color: var(--color-white);
+  background-color: var(--color-blue);
+  box-shadow: 0px 3px 1px 0px #0000001A;
+}
+
+.portfolio-item {
+  border: 1px solid var(--color-grayish);
+}
+
+.portfolio-category {
+  color: var(--text-color);
+}
 
 /* ========== Footer ========== */
 .footer {
